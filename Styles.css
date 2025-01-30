@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    height: 300vh;
+}
+
+.main-barra{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+    margin-top: 1.87rem;
+    
+    max-height: 1.87rem;
+    max-width: 50rem;
+}
+
+.barra{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.main-logo{
+    font-size: 1.87rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.main-links{
+    margin-right: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+
+}
+
+.main-linki{
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+    background-color: #DFF2EB;
+    border-radius: 5px;
+
+    transition: transform 3s ease;
+
+}
+
+.main-linki:hover{
+    transform:scale(0.9);
+}
+
+.link{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    text-decoration: none;
+    list-style: none;
+    gap: 10px;
+
+    --clipi: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+    position: relative;
+    z-index: 1; /* aplicamos esta propiedad para que el hover superposicione delante de su elemento absoluto */
+
+}
+
+.link:hover{
+    --clipi:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.links-inside-box{
+
+    transition: clip-path 0.3s; /* Se activa la transicion hasta que aplicamos la varibale y la propiedad de transicion */ 
+    clip-path: var(--clipi);
+
+    position: absolute;
+    top: 30px;
+
+
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    border: solid 1px grey;
+
+    z-index: 0;
+}
+
+
+.link-inside{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.link-inside:hover{
+    background-color: #AA77FF;
+    
+}
+
+
+.linki{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.linki:hover{
+    color: #C9EEFF;
+}
+
+.svg{
+    width: 20px;
+    height: 20px;
+}
+
+.galery{
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+
+    view-timeline-name: --foto;
+    view-timeline-axis: block;
+    animation-timeline: --foto;
+    animation-name: scale;
+    animation-range: entry 100% cover 100%;
+    animation-fill-mode: both;
+    
+}
+
+.galery-container{
+
+    width: 600px;
+    height: 500px;
+    
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+
+    animation: galery-animation 3s ease;
+    transition: transform 0.6s ease;
+    
+
+}
+.img{
+    flex: 0 0 48%; 
+    width: 200px;
+    height: 200px;
+
+    transition: transform 0.6s ease;  
+}
+
+.img:hover{  
+   transform: scale(1.2); 
+} 
+
+
+
+.info{
+    
+    height: 500px;
+    width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    animation: info-animation 3s ease;
+
+
+    
+}
+
+.foto{
+    
+    margin-top: 72px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    view-timeline-name: --foto;
+    view-timeline-axis: block;
+    animation-timeline: --foto;
+    animation-name: scale;
+    animation-range: entry 100% cover 100%;
+    animation-fill-mode: both;
+
+}
+
+.nombre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.dot{
+
+ width: 15px;
+ height: 15px;
+ background-color: #06D001;
+ border-radius: 50%;
+
+ animation: changecolor 0.9s infinite ease;
+
+
+}
+
+.ux{
+
+    margin-top: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    view-timeline: --scroll;
+    height: 30vh;
+}
+
+.designer{
+
+    font-size: 60px;
+
+    animation: 
+    scale-up both ease-in-out,
+    fade-away both linear;
+    animation-timeline: --scroll;  /* propiedad mas importante */
+
+    animation-range: 
+    exit 0% exit 65%,  /* Rango de escala */
+    exit 40% exit 100%; /* Rango de opacidad */
+}
+
+.aboutme{
+    margin-top: 0;
+    display: flex;
+    height: 50rem;
+    background-color: #000000;
+
+    view-timeline-name: --fondo; /* SCROLL nombre para que se detecte el elemento en el viewport */
+    view-timeline-axis: block; /* scrol de manera vertical para activar la animacion */
+    animation-timeline: --fondo; /* enlace entre el scrool y el elemento */
+    animation-name: color-change; /* nombre del keyframes */
+    animation-range: entry 0% cover 40%; /* cuanod el usuario esta viendo el 25% de la imagen comienza la animacion y cover que termine la animacion */
+    animation-fill-mode: both; /* direccion de animacion del elemento ambos lados */
+} 
+
+.inf{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-top: 50px;
+    margin-left:80px;
+    width: 700px;
+    height: 400px;
+    
+}
+
+.pic{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.dialogo{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 30px;
+    width: 400px;
+    height: 435px;
+    padding-top: 0;
+    padding-left: 20px;
+}
+
+p{
+    
+    color: white;
+}
+
+.clase-utilitaria{
+    margin: 0 auto;
+    max-width: 50rem;
+}
+
+
+@keyframes galery-animation{
+
+from{
+   transform: translateX(-800px);
+   opacity: 0;
+   
+}
+
+to{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+}
+
+@keyframes info-animation{
+
+    from{
+       transform: translateX(500px);
+       opacity: 0;
+       
+    }
+    
+    to{
+      transform: translateX(0);
+      opacity: 1;
+    }
+    
+    }
+
+@keyframes changecolor{
+    from{ background-color: #06D001;}
+    to{ background-color: #059212;}
+}
+
+@keyframes scale-up{
+    to { scale: 1.5; }
+}
+
+@keyframes fade-away{
+    to { opacity: 0; }
+}
+
+@keyframes color-change{
+    0%{ background-color: #ffffff;
+        opacity: 0;}
+    100%{ background-color: #000000;}
+}
+
+@keyframes scale{
+    0%{scale: 100%;}
+    100%{scale: 50%;}
+}
