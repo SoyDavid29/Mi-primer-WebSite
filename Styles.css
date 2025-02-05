@@ -18,16 +18,24 @@ body{
     align-items: center;
 
     margin: 0 auto;
-    margin-top: 1.87rem;
+    margin-top: 1.85rem;
     
-    max-height: 1.87rem;
+    top: 0;
+    position: sticky;
+    z-index:1000;  
+
     max-width: 50rem;
+
+    background-color: #000000;
+
+
 }
 
 .barra{
  display: flex;
  justify-content: space-between;
  align-items: center;
+
 }
 
 .main-logo{
