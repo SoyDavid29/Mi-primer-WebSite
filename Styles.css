@@ -25,8 +25,12 @@ body{
     z-index:1000;  
 
     max-width: 50rem;
+    border-radius: 10px;
+    background-color: lightblue;
+    box-shadow: 20px 15px 15px rgba(255, 55, 55, 0.3);
+    
+    
 
-    background-color: #000000;
 
 
 }
@@ -42,6 +46,8 @@ body{
     font-size: 1.87rem;
     font-weight: 700;
     color: #000000;
+    z-index: 1;
+    background-color: green;
 }
 
 .main-links{
@@ -168,6 +174,8 @@ body{
 
     animation: galery-animation 3s ease;
     transition: transform 0.6s ease;
+
+    z-index: 0;
     
 
 }
