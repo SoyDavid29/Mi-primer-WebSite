@@ -43,7 +43,8 @@ body{
     font-weight: 700;
     color: #000000;
     z-index: 1;
-    background-color: green;
+    margin-left: 15px;
+    
 }
 
 .main-links{
