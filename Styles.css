@@ -271,13 +271,13 @@ body{
     margin-top: 0;
     display: flex;
     height: 50rem;
-    background-color: #000000;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b, #86a8e7, #7f7fd5);
 
     view-timeline-name: --fondo; /* SCROLL nombre para que se detecte el elemento en el viewport */
     view-timeline-axis: block; /* scrol de manera vertical para activar la animacion */
     animation-timeline: --fondo; /* enlace entre el scrool y el elemento */
     animation-name: color-change; /* nombre del keyframes */
-    animation-range: entry 0% cover 40%; /* cuanod el usuario esta viendo el 25% de la imagen comienza la animacion y cover que termine la animacion */
+    animation-range: entry 10% cover 70%; /* cuanod el usuario esta viendo el 25% de la imagen comienza la animacion y cover que termine la animacion */
     animation-fill-mode: both; /* direccion de animacion del elemento ambos lados */
 } 
 
@@ -369,9 +369,10 @@ to{
 }
 
 @keyframes color-change{
-    0%{ background-color: #ffffff;
-        opacity: 0;}
-    100%{ background-color: #000000;}
+    0%{background: linear-gradient(135deg, #ff7e5f, #feb47b, #86a8e7, #7f7fd5);
+        opacity: 0.5;}
+    100%{background: linear-gradient(135deg, #7f7fd5, #86a8e7, #feb47b, #ff7e5f);
+        opacity: 1;}
 }
 
 @keyframes scale{
