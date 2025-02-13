@@ -106,6 +106,7 @@ body{
     list-style: none;
 
     border: solid 1px grey;
+    background-color: white;
 
     z-index: 0;
 }
@@ -266,6 +267,9 @@ body{
 .aboutme{
     margin-top: 0;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     height: 50rem;
     background: linear-gradient(135deg, #ff7e5f 20%, #feb47b 50%, #86a8e7 80%, #7f7fd5 100%);
 
@@ -279,13 +283,12 @@ body{
 
 .inf{
 
+
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 
-    margin-top: 50px;
-    margin-left:80px;
     width: 700px;
     height: 400px;
     
@@ -312,7 +315,43 @@ body{
 
 p{
     
-    color: white;
+  color: rgb(0, 0, 0);
+}
+
+.proyects{
+    display: flex;
+    width: 600px;
+    height: 300px;
+}
+
+.img-proyects{
+ display: flex;
+ flex-wrap: nowrap;
+ align-items: center;
+ gap: 40px;
+
+ padding: 50px;
+
+ overflow-x: auto; /* Activa scroll horizontal solo para ese elemento */
+ scroll-snap-type: x mandatory; /* Hace que los elementos encajen en su lugar */
+ scrollbar-width: none;  /* Oculta la barra de scroll  */
+
+}
+
+.albums{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+
+  view-timeline-name: --slide;
+  view-timeline-axis: inline; /* La animación sigue el eje X */
+  animation-timeline: --slide;
+  animation-name: fade-in;
+  animation-range: entry 0% cover 50%;
+}
+
+.albums:hover{
+    animation: scale-invert 1s both ease-in-out;
 }
 
 .clase-utilitaria{
@@ -374,4 +413,14 @@ to{
 @keyframes scale{
     0%{scale: 100%;}
     100%{scale: 50%;}
+}
+
+@keyframes scale-invert{
+    0%{scale: 100%}
+    100%{scale: 120%}
+}
+
+@keyframes fade-in {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
 }
