@@ -22,12 +22,12 @@ body{
     
     top: 6px;
     position: sticky;
-    z-index:1000;  
+    z-index:999;  
 
     max-width: 50rem;
     border-radius: 10px;
-    background-color: lightblue;
-    box-shadow: 20px 15px 15px rgba(255, 55, 55, 0.3);
+    background-color:rgb(255, 255, 255);
+    box-shadow: 20px 15px 15px rgba(100, 98, 98, 0.3);
 
 }
 
@@ -98,7 +98,7 @@ body{
     clip-path: var(--clipi);
 
     position: absolute;
-    top: 30px;
+    top: 35px;
 
 
     display: flex;
@@ -171,10 +171,6 @@ body{
 
     animation: galery-animation 3s ease;
     transition: transform 0.6s ease;
-
-    z-index: 0;
-    
-
 }
 .img{
     flex: 0 0 48%; 
