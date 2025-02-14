@@ -9,17 +9,20 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     height: 300vh;
+
 }
 
+
 .main-barra{
+
+    background: linear-gradient(135deg, #ff7e5f 20%, #feb47b 50%, #86a8e7 80%, #7f7fd5 100%);
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     margin: 0 auto;
-    margin-top: 1.85rem;
-    
+    margin-top: 0;    
     top: 6px;
     position: sticky;
     z-index:999;  
