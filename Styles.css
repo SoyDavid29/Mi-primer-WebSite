@@ -354,6 +354,85 @@ p{
     animation: scale-invert 1s both ease-in-out;
 }
 
+.form-container{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card{  /* Caja con todos los elementos del FORM */
+
+    box-shadow: 20px 15px 5px rgba(9, 179, 94, 0.1) ;
+    padding: 30px;
+    width: min(458px, 100%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.mail{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    color: #3ed464;
+
+}
+
+.mail.input{   /* Aqui estamos anidando clases para aplicar estilos a elementos dentro de esa clase */
+    background-color: transparent;
+    border: none;
+    display: block; /* Ya que por defecto estan en *inline* */
+    width: 100%;
+    color: #9DAFBD;
+    
+    font-family: 'Robotto';
+    font-size: 0.875rem;
+    line-height: 1rem;
+
+    margin-top: 10px; /* Aqui estamos separando el imput de su cajita */
+    
+}
+
+textarea.mail{
+    width: 100%;
+    background-color: #FFF;
+    font-size: 0.875rem; 
+    margin-top: 0.937rem;
+}
+ 
+
+.btn-enviar{
+    background-color: #366BFF;
+    color: #F7F9FA;
+
+    font-family: "Poppins", "san-serif";
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.3125rem;
+    border: none;
+    box-shadow: 0px 10px 20px rgba(54, 107, 255, 0.2);
+    
+    margin-top: 1.875rem;
+
+    border-radius: 15px;
+    max-width: 100px;
+    padding: 30px;
+    
+    
+
+    
+    
+}
+
+.btn-enviar:hover{
+    background-color: tomato;
+}
+
 .clase-utilitaria{
     margin: 0 auto;
     max-width: 50rem;
