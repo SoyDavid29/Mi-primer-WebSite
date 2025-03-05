@@ -365,6 +365,7 @@ p{
 .card{  /* Caja con todos los elementos del FORM */
 
     box-shadow: 20px 15px 5px rgba(9, 179, 94, 0.1) ;
+    border: solid 1px;
     padding: 30px;
     width: min(458px, 100%);
 
