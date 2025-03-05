@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-size: 16px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -13,7 +13,7 @@ body{
 }
 
 
-.main-barra{
+.main-barra {
 
     background: linear-gradient(135deg, #ff7e5f 20%, #feb47b 50%, #86a8e7 80%, #7f7fd5 100%);
 
@@ -22,35 +22,35 @@ body{
     align-items: center;
 
     margin: 0 auto;
-    margin-top: 0;    
+    margin-top: 0;
     top: 6px;
     position: sticky;
-    z-index:999;  
+    z-index: 999;
 
     max-width: 50rem;
     border-radius: 10px;
-    background-color:rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     box-shadow: 20px 10px 20px rgba(10, 10, 10, 0.3);
 
 }
 
-.barra{
- display: flex;
- justify-content: space-between;
- align-items: center;
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
-.main-logo{
+.main-logo {
     font-size: 1.87rem;
     font-weight: 700;
     color: #000000;
     z-index: 1;
     margin-left: 15px;
-    
+
 }
 
-.main-links{
+.main-links {
     margin-right: 20px;
 
     display: flex;
@@ -59,7 +59,7 @@ body{
 
 }
 
-.main-linki{
+.main-linki {
     text-decoration: none;
     padding-left: 10px;
     padding-right: 10px;
@@ -71,11 +71,11 @@ body{
 
 }
 
-.main-linki:hover{
-    transform:scale(0.9);
+.main-linki:hover {
+    transform: scale(0.9);
 }
 
-.link{ 
+.link {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,17 +87,19 @@ body{
     --clipi: polygon(0 0, 100% 0, 100% 0, 0 0);
 
     position: relative;
-    z-index: 1; /* aplicamos esta propiedad para que el hover superposicione delante de su elemento absoluto */
+    z-index: 1;
+    /* aplicamos esta propiedad para que el hover superposicione delante de su elemento absoluto */
 
 }
 
-.link:hover{
-    --clipi:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+.link:hover {
+    --clipi: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-.links-inside-box{
+.links-inside-box {
 
-    transition: clip-path 0.3s; /* Se activa la transicion hasta que aplicamos la varibale y la propiedad de transicion */ 
+    transition: clip-path 0.3s;
+    /* Se activa la transicion hasta que aplicamos la varibale y la propiedad de transicion */
     clip-path: var(--clipi);
 
     position: absolute;
@@ -115,7 +117,7 @@ body{
 }
 
 
-.link-inside{
+.link-inside {
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
@@ -126,28 +128,28 @@ body{
     text-decoration: none;
 }
 
-.link-inside:hover{
+.link-inside:hover {
     background-color: #AA77FF;
-    
+
 }
 
 
-.linki{
+.linki {
     list-style: none;
     text-decoration: none;
     color: black;
 }
 
-.linki:hover{
+.linki:hover {
     color: #C9EEFF;
 }
 
-.svg{
+.svg {
     width: 20px;
     height: 20px;
 }
 
-.galery{
+.galery {
 
     display: flex;
     justify-content: space-around;
@@ -159,14 +161,14 @@ body{
     animation-name: scale;
     animation-range: entry 100% cover 100%;
     animation-fill-mode: both;
-    
+
 }
 
-.galery-container{
+.galery-container {
 
     width: 600px;
     height: 500px;
-    
+
 
     display: flex;
     flex-wrap: wrap;
@@ -176,22 +178,23 @@ body{
     animation: galery-animation 3s ease;
     transition: transform 0.6s ease;
 }
-.img{
-    flex: 0 0 48%; 
+
+.img {
+    flex: 0 0 48%;
     width: 200px;
     height: 200px;
 
-    transition: transform 0.6s ease;  
+    transition: transform 0.6s ease;
 }
 
-.img:hover{  
-   transform: scale(1.2); 
-} 
+.img:hover {
+    transform: scale(1.2);
+}
 
 
 
-.info{
-    
+.info {
+
     height: 500px;
     width: 400px;
 
@@ -202,11 +205,11 @@ body{
     animation: info-animation 3s ease;
 
 
-    
+
 }
 
-.foto{
-    
+.foto {
+
     margin-top: 72px;
     width: 300px;
     height: 300px;
@@ -222,29 +225,29 @@ body{
 
 }
 
-.nombre{
+.nombre {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-.dot{
+.dot {
 
- width: 15px;
- height: 15px;
- background-color: #06D001;
- border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: #06D001;
+    border-radius: 50%;
 
- animation: changecolor 0.9s infinite ease;
+    animation: changecolor 0.9s infinite ease;
 
 
 }
 
-.ux{
+.ux {
 
     margin-top: 20px;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -253,21 +256,24 @@ body{
     height: 30vh;
 }
 
-.designer{
+.designer {
 
     font-size: 60px;
 
-    animation: 
-    scale-up both ease-in-out,
-    fade-away both linear;
-    animation-timeline: --scroll;  /* propiedad mas importante */
+    animation:
+        scale-up both ease-in-out,
+        fade-away both linear;
+    animation-timeline: --scroll;
+    /* propiedad mas importante */
 
-    animation-range: 
-    exit 0% exit 65%,  /* Rango de escala */
-    exit 40% exit 100%; /* Rango de opacidad */
+    animation-range:
+        exit 0% exit 65%,
+        /* Rango de escala */
+        exit 40% exit 100%;
+    /* Rango de opacidad */
 }
 
-.aboutme{
+.aboutme {
     margin-top: 0;
     display: flex;
     justify-content: space-between;
@@ -276,25 +282,31 @@ body{
     height: 50rem;
     background: linear-gradient(135deg, #ff7e5f 20%, #feb47b 50%, #86a8e7 80%, #7f7fd5 100%);
 
-    view-timeline-name: --fondo; /* SCROLL nombre para que se detecte el elemento en el viewport */
-    view-timeline-axis: block; /* scrol de manera vertical para activar la animacion */
-    animation-timeline: --fondo; /* enlace entre el scrool y el elemento */
-    animation-name: color-change; /* nombre del keyframes */
-    animation-range: entry 10% cover 70%; /* cuanod el usuario esta viendo el 25% de la imagen comienza la animacion y cover que termine la animacion */
-    animation-fill-mode: both; /* direccion de animacion del elemento ambos lados */
-} 
+    view-timeline-name: --fondo;
+    /* SCROLL nombre para que se detecte el elemento en el viewport */
+    view-timeline-axis: block;
+    /* scrol de manera vertical para activar la animacion */
+    animation-timeline: --fondo;
+    /* enlace entre el scrool y el elemento */
+    animation-name: color-change;
+    /* nombre del keyframes */
+    animation-range: entry 10% cover 70%;
+    /* cuanod el usuario esta viendo el 25% de la imagen comienza la animacion y cover que termine la animacion */
+    animation-fill-mode: both;
+    /* direccion de animacion del elemento ambos lados */
+}
 
-.inf{
+.inf {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 
     width: 700px;
-    height: 400px;   
+    height: 400px;
 }
 
-.pic{
+.pic {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -302,7 +314,7 @@ body{
 
 }
 
-.dialogo{
+.dialogo {
     display: flex;
     flex-direction: column;
 
@@ -313,48 +325,52 @@ body{
     padding-left: 20px;
 }
 
-p{
-    
-  color: rgb(0, 0, 0);
+p {
+
+    color: rgb(0, 0, 0);
 }
 
-.proyects{
+.proyects {
     display: flex;
     width: 600px;
     height: 300px;
 }
 
-.img-proyects{
- display: flex;
- flex-wrap: nowrap;
- align-items: center;
- gap: 40px;
+.img-proyects {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 40px;
 
- padding: 50px;
+    padding: 50px;
 
- overflow-x: auto; /* Activa scroll horizontal solo para ese elemento */
- scroll-snap-type: x mandatory; /* Hace que los elementos encajen en su lugar */
- scrollbar-width: none;  /* Oculta la barra de scroll  */
+    overflow-x: auto;
+    /* Activa scroll horizontal solo para ese elemento */
+    scroll-snap-type: x mandatory;
+    /* Hace que los elementos encajen en su lugar */
+    scrollbar-width: none;
+    /* Oculta la barra de scroll  */
 
 }
 
-.albums{
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
+.albums {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 
-  view-timeline-name: --slide;
-  view-timeline-axis: inline; /* La animación sigue el eje X */
-  animation-timeline: --slide;
-  animation-name: fade-in;
-  animation-range: entry 0% cover 50%;
+    view-timeline-name: --slide;
+    view-timeline-axis: inline;
+    /* La animación sigue el eje X */
+    animation-timeline: --slide;
+    animation-name: fade-in;
+    animation-range: entry 0% cover 50%;
 }
 
-.albums:hover{
+.albums:hover {
     animation: scale-invert 1s both ease-in-out;
 }
 
-.form-container{
+.form-container {
     margin-top: 40px;
     display: flex;
     justify-content: space-around;
@@ -362,10 +378,11 @@ p{
     align-items: center;
 }
 
-.card{  /* Caja con todos los elementos del FORM */
+.card {
+    /* Caja con todos los elementos del FORM */
 
-    box-shadow: 20px 15px 5px rgba(9, 179, 94, 0.1) ;
-    border: solid 1px;
+    box-shadow: 20px 15px 5px rgba(9, 179, 94, 0.1);
+    border: solid 1px #d4d4d4 solid;
     padding: 30px;
     width: min(458px, 100%);
 
@@ -375,132 +392,176 @@ p{
     gap: 10px;
 }
 
-.mail{
+.mail {
     display: flex;
     align-items: center;
-    gap: 20px;
 
-    color: #3ed464;
+
+    border: #d4d4d4 solid 1px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
 
 }
 
-.mail.input{   /* Aqui estamos anidando clases para aplicar estilos a elementos dentro de esa clase */
+.mail.input {
+    /* Aqui estamos anidando clases para aplicar estilos a elementos dentro de esa clase */
     background-color: transparent;
-    border: none;
-    display: block; /* Ya que por defecto estan en *inline* */
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    
+    display: block;
+    /* Ya que por defecto estan en *inline* */
     width: 100%;
     color: #9DAFBD;
-    
-    font-family: 'Robotto';
+
+    font-family: 'Poppins';
     font-size: 0.875rem;
     line-height: 1rem;
 
-    margin-top: 10px; /* Aqui estamos separando el imput de su cajita */
-    
+    margin-top: 10px;
+    /* Aqui estamos separando el imput de su cajita */
+
 }
 
-textarea.mail{
+textarea.mail {
     width: 100%;
     background-color: #FFF;
-    font-size: 0.875rem; 
+    font-size: 0.875rem;
     margin-top: 0.937rem;
 }
- 
 
-.btn-enviar{
+
+.btn-enviar {
     background-color: #366BFF;
     color: #F7F9FA;
 
     font-family: "Poppins", "san-serif";
-    font-size: 0.875rem;
+    font-size: 15px;
     font-weight: 600;
     line-height: 1.3125rem;
     border: none;
     box-shadow: 0px 10px 20px rgba(54, 107, 255, 0.2);
-    
-    margin-top: 1.875rem;
 
+    
     border-radius: 15px;
     max-width: 100px;
+    max-height: 30px;
     padding: 30px;
-    
-    
 
-    
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+
 }
 
-.btn-enviar:hover{
+.btn-enviar:hover {
     background-color: tomato;
 }
 
-.clase-utilitaria{
+.clase-utilitaria {
     margin: 0 auto;
     max-width: 50rem;
 }
 
 
-@keyframes galery-animation{
+@keyframes galery-animation {
 
-from{
-   transform: translateX(-800px);
-   opacity: 0;
-   
-}
+    from {
+        transform: translateX(-800px);
+        opacity: 0;
 
-to{
-  transform: translateX(0);
-  opacity: 1;
-}
-
-}
-
-@keyframes info-animation{
-
-    from{
-       transform: translateX(500px);
-       opacity: 0;
-       
-    }
-    
-    to{
-      transform: translateX(0);
-      opacity: 1;
-    }
-    
     }
 
-@keyframes changecolor{
-    from{ background-color: #06D001;}
-    to{ background-color: #059212;}
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
 }
 
-@keyframes scale-up{
-    to { scale: 1.5; }
+@keyframes info-animation {
+
+    from {
+        transform: translateX(500px);
+        opacity: 0;
+
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
 }
 
-@keyframes fade-away{
-    to { opacity: 0; }
+@keyframes changecolor {
+    from {
+        background-color: #06D001;
+    }
+
+    to {
+        background-color: #059212;
+    }
 }
 
-@keyframes color-change{
-    0%{background: linear-gradient(135deg, #ff7e5f, #feb47b, #86a8e7, #7f7fd5);
-        opacity: 0.5;}
-    100%{background: linear-gradient(135deg, #7f7fd5, #86a8e7, #feb47b, #ff7e5f);
-        opacity: 1;}
+@keyframes scale-up {
+    to {
+        scale: 1.5;
+    }
 }
 
-@keyframes scale{
-    0%{scale: 100%;}
-    100%{scale: 50%;}
+@keyframes fade-away {
+    to {
+        opacity: 0;
+    }
 }
 
-@keyframes scale-invert{
-    0%{scale: 100%}
-    100%{scale: 120%}
+@keyframes color-change {
+    0% {
+        background: linear-gradient(135deg, #ff7e5f, #feb47b, #86a8e7, #7f7fd5);
+        opacity: 0.5;
+    }
+
+    100% {
+        background: linear-gradient(135deg, #7f7fd5, #86a8e7, #feb47b, #ff7e5f);
+        opacity: 1;
+    }
+}
+
+@keyframes scale {
+    0% {
+        scale: 100%;
+    }
+
+    100% {
+        scale: 50%;
+    }
+}
+
+@keyframes scale-invert {
+    0% {
+        scale: 100%
+    }
+
+    100% {
+        scale: 120%
+    }
 }
 
 @keyframes fade-in {
-    from { opacity: 0; transform: translateX(-50px); }
-    to { opacity: 1; transform: translateX(0); }
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }

@@ -96,7 +96,15 @@
     <section>
 
         <div class="form-container">
-            <form action=https://formspree.io/f/xgvwnypq method="POST" class="card">
+
+            <div class="contact-container">
+                <h1>Hey everyone! I'm Dave.</h1>
+                <p>if you want to sent me a message plis, </p>
+                <p>Left your Email and your text message in the following box</p>
+            </div>
+
+
+            <form action=https://formspree.io/f/mldgqqoy method="POST" class="card">
                 <!-- Action **Hacia donde se envia el formulario y method ** proceso de envio en el servidor -->
 
                 <label class="mail" for="Email">
@@ -107,10 +115,10 @@
                 </label>
 
 
-                <label class="mail" for="textarea"> Your Message:
+                <label class="mail" for="message"> Your Message:
 
-                    <textarea class="mail" style="resize: none;" placeholder="Message" required minlength="8"
-                        maxlength="300" id="textarea">
+                    <textarea name="message" class="mail" style="resize: none;" placeholder="Message" required minlength="8"
+                        maxlength="300" id="message" cols="30" rows="5">
                     </textarea>
 
                 </label>
@@ -120,11 +128,6 @@
                 </button>
 
             </form>
-
-            <div class="contact-container">
-                <h1>Hey everyone! I'm Dave</h1>
-            </div>
-
         </div>
 
     </section>
